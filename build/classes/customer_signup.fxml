@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="600.0" style="-fx-background-color: #2c3e50; -fx-border-color: #34495e; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Customer_signupController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="122.0" layoutY="19.0" prefHeight="380.0" prefWidth="366.0" spacing="15.0">
+         <children>
+            <Label text="Customer Sign Up" textFill="#e74c3c">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="id" prefHeight="40.0" prefWidth="366.0" promptText="ID" style="-fx-background-radius: 8; -fx-border-color: #e74c3c; -fx-border-radius: 8; -fx-border-width: 2;" />
+            <TextField fx:id="name" prefHeight="40.0" prefWidth="366.0" promptText="Name" style="-fx-background-radius: 8; -fx-border-color: #e74c3c; -fx-border-radius: 8; -fx-border-width: 2;" />
+            <TextField fx:id="mailpassword" prefHeight="40.0" prefWidth="366.0" promptText="Enter your mail address" style="-fx-background-radius: 8; -fx-border-color: #e74c3c; -fx-border-width: 2; -fx-border-radius: 8;" />
+            <PasswordField fx:id="canteenpassword" prefHeight="40.0" prefWidth="366.0" promptText="Password for canteen" style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #e74c3c; -fx-border-width: 2;" />
+            <PasswordField fx:id="confirmPassword" prefHeight="40.0" prefWidth="366.0" promptText="Confirm Password" style="-fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: #e74c3c; -fx-border-width: 2;" />
+            <Button mnemonicParsing="false" onAction="#signupbtnpushed" prefHeight="40.0" prefWidth="96.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 8; -fx-border-color: #c0392b; -fx-border-width: 2; -fx-border-radius: 8;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" text="message" textFill="#a0ea02" />
+         </children>
+      </VBox>
+      <Button fx:id="backbtn" layoutX="527.0" layoutY="410.0" mnemonicParsing="false" onAction="#backbtnpushed" prefHeight="40.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 8; -fx-border-color: #c0392b; -fx-border-radius: 8; -fx-border-width: 2;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" style="-fx-background-color: #ffa500; -fx-border-color: #013220; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <FlowPane layoutX="188.0" layoutY="115.0" prefHeight="238.0" prefWidth="230.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button2" layoutX="85.0" layoutY="160.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button3" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button4" layoutX="85.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button5" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button6" layoutX="160.0" layoutY="10.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button7" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button8" layoutX="85.0" layoutY="85.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+            <Button fx:id="button9" layoutX="160.0" layoutY="85.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" style="-fx-font-size: 35;" />
+         </children>
+      </FlowPane>
+      <Text fx:id="winnerText" fill="WHITE" layoutX="182.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="237.9443359375">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="452.0" layoutY="362.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="40.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" text="Restart" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button layoutX="37.0" layoutY="369.0" mnemonicParsing="false" onAction="#backbtnpushed" prefHeight="40.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

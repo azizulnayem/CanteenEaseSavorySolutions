@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="600.0" style="-fx-background-color: #FFD700; -fx-border-color: #013220; -fx-border-width: 4;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KhankitchenController">
+    <children>
+        <HBox alignment="CENTER" layoutX="57.0" layoutY="54.0" prefHeight="110.0" prefWidth="450.0" spacing="15.0">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@pizza.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@sandwich.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@red%20tea.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <Label layoutX="170.0" layoutY="14.0" text="Khan Kitchen" textFill="#611010">
+            <font>
+                <Font name="Arial Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="109.0" layoutY="168.0" prefHeight="17.0" prefWidth="36.0" text="Pizza" textFill="#611010" />
+        <Label layoutX="257.0" layoutY="168.0" text="Sandwich" textFill="#611010" />
+        <Label layoutX="399.0" layoutY="168.0" text="Green Tea" textFill="#611010" />
+        <Label fx:id="pizza_price" layoutX="75.0" layoutY="188.0" text="Price: 100 per piece" textFill="#611010" />
+        <Label fx:id="sandwich_price" layoutX="234.0" layoutY="188.0" text="Price: 50 per piece" textFill="#611010" />
+        <Label fx:id="tea_price" layoutX="384.0" layoutY="188.0" text="Price: 10 per cup" textFill="#611010" />
+        <TextField fx:id="roll_quantity" layoutX="83.0" layoutY="206.0" prefHeight="25.0" prefWidth="88.0" promptText="Quantity" style="-fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-width: 2; -fx-border-radius: 8;" />
+        <TextField fx:id="burger_quantity" layoutX="238.0" layoutY="206.0" prefHeight="25.0" prefWidth="88.0" promptText="Quantity" style="-fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" />
+        <TextField fx:id="tea_quantity" layoutX="384.0" layoutY="206.0" prefHeight="25.0" prefWidth="88.0" promptText="Quantity" style="-fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" />
+        <Button fx:id="place_order" layoutX="222.0" layoutY="247.0" maxHeight="25.0" mnemonicParsing="false" onAction="#place_orderpushed" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-width: 2; -fx-border-radius: 8;" text="Place Order" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="total_amount" layoutX="219.0" layoutY="309.0" prefHeight="17.0" prefWidth="163.0" text="Total amount" textFill="#611010" />
+        <Button layoutX="8.0" layoutY="464.0" mnemonicParsing="false" onAction="#logoutbtnpushed" prefHeight="30.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-width: 2; -fx-border-radius: 8;" text="Logout" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="527.0" layoutY="464.0" mnemonicParsing="false" onAction="#backbtnpushed" prefHeight="30.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" text="Back" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="bkash" fitHeight="81.0" fitWidth="149.0" layoutX="57.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Bkash-logo.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="bkash_number" layoutX="222.0" layoutY="335.0" prefHeight="30.0" promptText="Bkash Number" style="-fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" />
+   <TextField fx:id="bkash_password" layoutX="222.0" layoutY="375.0" prefHeight="30.0" promptText="Bkash pin" style="-fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" /> 
+        <Button fx:id="confirm_order" layoutX="222.0" layoutY="414.0" mnemonicParsing="false" onAction="#confirm_btnpushed" prefHeight="30.0" style="-fx-background-color: #000000; -fx-background-radius: 8; -fx-border-color: #AA336A; -fx-border-radius: 8; -fx-border-width: 2;" text="Confirm order &amp; payment" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="confirm_status" layoutX="222.0" layoutY="461.0" prefHeight="46.0" prefWidth="208.0" text="lab" textFill="#022603" />
+    </children>
+</AnchorPane>

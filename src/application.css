@@ -1,0 +1,12 @@
+.root {
+    -fx-background-color: gray;
+}
+
+.cell {
+    -fx-border-color: white;
+}
+
+#reset-btn {
+    -fx-border-color:white;
+
+}
