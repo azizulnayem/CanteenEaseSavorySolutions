@@ -1,12 +1,12 @@
 # CanteenEaseSavorySolutionsReport
 
-**Introduction: **
+**Introduction:**
 This report provides an insightful overview of the innovative project, "CanteenEase: Savory Solutions," implemented using JavaFX. The project's primary objective is to streamline and enhance the canteen management experience for both administrators and customers, introducing efficient order processing, payment systems, and an engaging multiplayer game.
 
-**Framework Used: **
+**Framework Used:**
 "CanteenEase: Savory Solutions" was meticulously crafted using the JavaFX framework, renowned for its ability to create visually captivating and interactive user interfaces. Additionally, the project seamlessly integrates a file system to manage data, substituting the need for a traditional database. This amalgamation of JavaFX and the customized file system ensures a user-friendly interface and efficient data handling.
 
-**Project Features: **
+**Project Features:**
 The project boasts a multitude of compelling features designed to elevate user interaction and convenience:
 Admin Panel: Administrators can access an intuitive dashboard showcasing real-time order lists. This feature empowers administrators to reset orders and dynamically adjust product prices, fostering seamless canteen management.
 
